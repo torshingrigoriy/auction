@@ -1,0 +1,19 @@
+.stars {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 0;
+}
+.star {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 1px solid #f58e3b;
+  cursor: pointer;
+}
+.star.fill,
+.star:hover {
+  transition: 0.3s ease-in all;
+  background: #f58e3b;
+}

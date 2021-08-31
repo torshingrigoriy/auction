@@ -1,0 +1,14 @@
+<div class="products">
+  <div class="product-card" *ngFor="let product of products">
+    <div class="photo" [routerLink]="['/auction/product', product.id]"><img src="{{product.imageUrl}}" alt=""></div>
+    <div class="info">
+      <div class="title">{{product.title}}</div>
+      <div class="price">{{product.price}} $</div>
+    </div>
+
+    <div class="description">
+      {{product.description}}
+    </div>
+    <app-product-rating [rating]="product.rating"></app-product-rating>
+  </div>
+</div>

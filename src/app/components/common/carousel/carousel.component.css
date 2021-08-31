@@ -1,0 +1,29 @@
+.carousel {
+  width: 100%;
+  background: gray;
+  position: relative;
+  overflow: hidden;
+}
+.carousel-display {
+  height: 300px;
+  display: flex;
+  flex-direction: row;
+  overflow: hidden;
+}
+.carousel-nav {
+  position: absolute;
+  font-size: 100px;
+  color: #fff;
+  top: 50%;
+  cursor: pointer;
+  transform: translateY(-50%);
+}
+.carousel-prev {
+  left: 10px;
+}
+.carousel-next {
+  right: 10px;
+}
+.carousel-item{
+  height: 100%;
+}

@@ -1,0 +1,12 @@
+.title {
+  font-size: 18px;
+  color: #fff;
+  background: #8a2be2;
+  padding: 5px;
+  margin: 5px 0;
+}
+
+form {
+  width: 250px;
+  padding: 10px 0;
+}
