@@ -12,6 +12,14 @@ import { ProductRatingComponent } from './components/common/product-rating/produ
 import { ProductComponent } from './components/common/product/product.component';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import {HttpClientModule} from "@angular/common/http";
+import {ChatpageComponent} from "./components/pages/chatpage/chatpage.component";
+import { BasicChatComponent } from './components/common/basic-chat/basic-chat.component';
+import { VipChatComponent } from './components/common/vip-chat/vip-chat.component';
+import { ProductsPageComponent } from './components/pages/products-page/products-page.component';
+import { ProductCardComponent } from './components/common/product-card/product-card.component';
+import {CountLimiterPipe, FilterPipe} from "./services/pipes";
+import {ReactiveFormsModule} from "@angular/forms";
 
 @NgModule({
   declarations: [
@@ -23,12 +31,21 @@ import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
     ProductsComponent,
     ProductRatingComponent,
     ProductComponent,
-    HomepageComponent
+    HomepageComponent,
+    ChatpageComponent,
+    BasicChatComponent,
+    VipChatComponent,
+    ProductsPageComponent,
+    ProductCardComponent,
+    CountLimiterPipe,
+    FilterPipe,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    NgbModule
+    NgbModule,
+    HttpClientModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]

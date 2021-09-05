@@ -30,8 +30,8 @@ a {
   font-style: italic;
   margin-bottom: 5px;
 }
-.input input,
-.input select {
+input[type='text'],
+select {
   height: 30px;
   padding: 0 5px;
   font-size: 14px;

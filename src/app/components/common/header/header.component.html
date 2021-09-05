@@ -1,12 +1,13 @@
 <header>
   <div class="wrapper">
-    <div class="logo">Cash Machine</div>
+    <div class="logo" [routerLink]="['/']">Cash Machine</div>
     <nav class="menu">
       <ul>
-        <li><a routerLinkActive="active" [routerLink]="['/']">Страница 1</a></li>
-        <li><a routerLinkActive="active" [routerLink]="['/page2']">Страница 2</a></li>
+        <li><a routerLinkActive="active" [routerLink]="['/chat']">Чат</a></li>
+        <li><a routerLinkActive="active" [routerLink]="['/products']">Товары</a></li>
         <li><a routerLinkActive="active" [routerLink]="['/page3']">Страница 3</a></li>
       </ul>
     </nav>
   </div>
 </header>
+

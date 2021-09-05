@@ -1,0 +1,29 @@
+<div class="products-page">
+  <div class="wrapper">
+    <form [formGroup]="searchForm">
+      <div class="products-head">
+        <div class="title">Товары</div>
+        <div class="search-block">
+          <input id="search-input" formControlName="searchValue" type="text" placeholder="Найдите товар">
+        </div>
+        <div class="search-setting">
+          <select formControlName="searchField" id="">
+            <option value="title">Название</option>
+            <option value="price">Цена</option>
+            <option value="description">Описание</option>
+            <option value="author">Автор</option>
+          </select>
+        </div>
+      </div>
+    </form>
+    {{searchForm.get('searchField')?.value}}
+    {{searchForm.get('searchValue')?.value}}
+    <div class="products" *ngIf="!isLoading; else loading">
+      <app-product-card class="product-card" *ngFor="let product of products | filterPipe: searchForm.get('searchValue')?.value: searchForm.get('searchField')?.value" [product]="product"></app-product-card>
+    </div>
+    <ng-template #loading>
+      Загрузка
+    </ng-template>
+
+  </div>
+</div>

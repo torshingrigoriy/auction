@@ -6,7 +6,7 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./product-rating.component.css']
 })
 export class ProductRatingComponent implements OnInit {
-  @Input() rating: number = 0;
+  @Input() rating: number | undefined = 0;
   stars: boolean[] = []
 
   constructor() {
@@ -14,15 +14,16 @@ export class ProductRatingComponent implements OnInit {
 
   ngOnInit(): void {
     let o = (this.createRating())
-    console.log(o)
   }
 
   createRating(): void {
-    for (let j = 0; j < this.rating; j++) {
-      this.stars.push(true)
-    }
-    for (let i = 0; i < 5 - this.rating; i++) {
-      this.stars.push(false)
+    if(this.rating) {
+      for (let j = 0; j < this.rating; j++) {
+        this.stars.push(true)
+      }
+      for (let i = 0; i < 5 - this.rating; i++) {
+        this.stars.push(false)
+      }
     }
   }
 }

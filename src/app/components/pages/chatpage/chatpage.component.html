@@ -1,0 +1,7 @@
+<div class="chatpage">
+  <div class="wrapper">
+    <h1>Chatpage</h1>
+    <button [routerLink]="[{outlets: {primary: 'chat', vip: 'vip'}}]">Show vip chat</button>
+    <router-outlet name="vip"></router-outlet>
+  </div>
+</div>
