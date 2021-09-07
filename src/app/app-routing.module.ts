@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import {HomepageComponent} from "./components/pages/homepage/homepage.component";
-import {ProductComponent} from "./components/common/product/product.component";
+import {ProductComponent} from "./components/pages/product/product.component";
 import {ChatpageComponent} from "./components/pages/chatpage/chatpage.component";
 import {BasicChatComponent} from "./components/common/basic-chat/basic-chat.component";
 import {VipChatComponent} from "./components/common/vip-chat/vip-chat.component";

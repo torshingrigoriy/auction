@@ -1,6 +1,6 @@
 import {Injectable} from "@angular/core";
 import {HttpClient} from "@angular/common/http";
-import {ProductCard} from "../components/common/products/products.component";
+import {Product} from "../components/common/products/products.component";
 
 @Injectable({
   providedIn: 'root'
@@ -12,12 +12,16 @@ export class ProductsService {
   ) {
 
   }
-  getProducts(): ProductCard[] {
+
+  getProducts(): Product[] {
     return products
+  }
+  getProductsById(id:number): Product {
+    return <Product> products.find(p => p.id == id)
   }
 }
 
-let products: ProductCard[] = [
+let products: Product[] = [
   {
     id: 1,
     imageUrl: 'https://autoreview.ru/images/Article/46/Article_4699_860_575.jpg',

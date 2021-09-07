@@ -9,7 +9,7 @@ import { SearchFormComponent } from './components/common/search-form/search-form
 import { CarouselComponent } from './components/common/carousel/carousel.component';
 import { ProductsComponent } from './components/common/products/products.component';
 import { ProductRatingComponent } from './components/common/product-rating/product-rating.component';
-import { ProductComponent } from './components/common/product/product.component';
+import { ProductComponent } from './components/pages/product/product.component';
 import { HomepageComponent } from './components/pages/homepage/homepage.component';
 import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import {HttpClientModule} from "@angular/common/http";

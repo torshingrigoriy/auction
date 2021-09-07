@@ -1,5 +1,5 @@
 import {Pipe, PipeTransform} from "@angular/core";
-import {ProductCard} from "../components/common/products/products.component";
+import {Product} from "../components/common/products/products.component";
 
 @Pipe(
   {

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 import {ProductsService} from "../../../services/products.service";
 
-export interface ProductCard {
+export interface Product {
   id: number,
   imageUrl: string,
   title: string,
@@ -16,7 +16,7 @@ export interface ProductCard {
   styleUrls: ['./products.component.css']
 })
 export class ProductsComponent implements OnInit {
-  products: ProductCard[] = []
+  products: Product[] = []
 
   constructor(
     private _productService: ProductsService

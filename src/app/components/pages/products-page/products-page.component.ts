@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ProductCard} from "../../common/products/products.component";
+import {Product} from "../../common/products/products.component";
 import {ProductsService} from "../../../services/products.service";
 import {FormBuilder, FormGroup} from "@angular/forms";
 
@@ -9,7 +9,7 @@ import {FormBuilder, FormGroup} from "@angular/forms";
   styleUrls: ['./products-page.component.css']
 })
 export class ProductsPageComponent implements OnInit {
-  products: ProductCard[] = []
+  products: Product[] = []
   isLoading: boolean = false
   searchForm: FormGroup
   constructor(

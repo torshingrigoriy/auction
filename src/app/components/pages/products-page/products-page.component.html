@@ -16,8 +16,6 @@
         </div>
       </div>
     </form>
-    {{searchForm.get('searchField')?.value}}
-    {{searchForm.get('searchValue')?.value}}
     <div class="products" *ngIf="!isLoading; else loading">
       <app-product-card class="product-card" *ngFor="let product of products | filterPipe: searchForm.get('searchValue')?.value: searchForm.get('searchField')?.value" [product]="product"></app-product-card>
     </div>

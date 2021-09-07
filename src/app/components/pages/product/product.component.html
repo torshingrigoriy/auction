@@ -1,0 +1,23 @@
+<div class="wrapper">
+  <div class="product" *ngIf="product; else loader">
+    <div class="gallery">
+      <img src="{{product.imageUrl}}" alt="">
+    </div>
+    <div class="product-info">
+      <div class="product-info_header">
+        <div class="title">{{product.title}}</div>
+        <div class="price">{{product.price}} $</div>
+      </div>
+      <div class="description">
+        {{product.description}}
+      </div>
+      <div class="rating">
+        <app-product-rating [rating]="product.rating"></app-product-rating>
+      </div>
+    </div>
+  </div>
+  <ng-template #loader class="loader">
+    Loading...
+  </ng-template>
+
+</div>

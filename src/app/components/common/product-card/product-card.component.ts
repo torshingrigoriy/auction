@@ -1,5 +1,5 @@
 import {Component, Input, OnInit} from '@angular/core';
-import {ProductCard} from "../products/products.component";
+import {Product} from "../products/products.component";
 
 @Component({
   selector: 'app-product-card',
@@ -7,7 +7,7 @@ import {ProductCard} from "../products/products.component";
   styleUrls: ['./product-card.component.css']
 })
 export class ProductCardComponent implements OnInit {
-  @Input() product: ProductCard | undefined;
+  @Input() product: Product | undefined;
   constructor() {
   }
 
